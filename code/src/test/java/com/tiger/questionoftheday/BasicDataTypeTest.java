@@ -1,10 +1,17 @@
 package com.tiger.questionoftheday;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.util.ObjectUtils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BasicDataTypeTest {
+
+    @Test
+    public void t(){
+        String id = ObjectUtils.identityToString(this);
+        System.out.println(id);
+    }
 
     @Test
     public void byteTest() {
